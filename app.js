@@ -21,12 +21,12 @@ app.use(morgan('dev'))
 
 //ROUTES
 app.use(require('./routes/UserRoutes'));
-
-// app.get('', (req, res)=> {
-//   res.send({
-//     status:'ok',
-//     message: 'Hello world'
-//   })
+app.get('/', (req, res)=> {
+  res.send({
+     status:'ok',
+      success: true,
+     message: 'Recipe Share'
+   })
 //   // res.status(200).json({message:'Hello World'})
 // });
 
