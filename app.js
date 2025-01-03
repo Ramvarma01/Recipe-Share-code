@@ -23,9 +23,8 @@ app.use(morgan('dev'))
 app.use(require('./routes/UserRoutes'));
 app.get('/', (req, res)=> {
   res.send({
-     status:'ok',
-      success: true,
-     message: 'Recipe Share'
+     'status':'ok',
+     'message': 'Recipe Share'
    })
 //   // res.status(200).json({message:'Hello World'})
 // });
